@@ -1,0 +1,219 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "SQL Primer for Data Analysts",
+    "section": "",
+    "text": "Preface\nI created this primer so you can quickly learn the basics of SQL in the context of performing data analysis. Here’s what I mean:\n\nAs a data analyst, you need to learn just part of SQL to do most of your work.\nAs much as possible, this primer teaches SQL as if you’re doing data analysis.\n\nThere’s much to know about SQL, but this primer is intentionally lean. It’s accelerated learning.\nAfter completing this primer, you should be able to use SQL to retrieve and wrangle data. You’ll also be prepared to dive deeper into SQL when needed."
+  },
+  {
+    "objectID": "intro.html",
+    "href": "intro.html",
+    "title": "1  Introduction",
+    "section": "",
+    "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "summary.html",
+    "href": "summary.html",
+    "title": "2  Summary",
+    "section": "",
+    "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "part_get_started.html",
+    "href": "part_get_started.html",
+    "title": "Get Started",
+    "section": "",
+    "text": "Here’s what’s in Get Started:\n\nIntroduction\nCourse Roadmap"
+  },
+  {
+    "objectID": "intro.html#prerequisites",
+    "href": "intro.html#prerequisites",
+    "title": "Introduction",
+    "section": "Prerequisites",
+    "text": "Prerequisites\nThis primer assumes:\n\nyou have no experience working with SQL or relational databases\nyou have at least novice-level skills coding either Python or R, ideally both"
+  },
+  {
+    "objectID": "intro.html#learning-objectives",
+    "href": "intro.html#learning-objectives",
+    "title": "Introduction",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter completing this primer, you should be able to:\n\nExplain basic concepts regarding the design and use of a relational database (db)\nDemonstrate intermediate-level skills for using SQL to select and wrangle data stored in a relational database\nUse command line and GUI applications to write standalone SQL and submit it a relational database management system (RDBMS)\nWrite R and Python scripts that contain embedded SQL\n\nThe premise that underlies the learning objectives for this primer is the data analysts mostly write SQL and submit it to a RDMBS in order to retrieve data and to wrangle data on the database server."
+  },
+  {
+    "objectID": "intro.html#why-sql",
+    "href": "intro.html#why-sql",
+    "title": "Introduction",
+    "section": "Why SQL?",
+    "text": "Why SQL?\nWhy SQL? This is an easy question. The answer is because SQL is the programming language used to interact with relational databases.\nThe question should be, “Why relational databases?\nThe short answer is because most organizations have found relational databases to be the best way to store data.\nThe long answer has many parts. Below is a post from the Open Data Science Conference blog, but you can easily Google to find many other answers.\n\nUnit 1 will provide you with a primer about relational databases and the applications used to maintain named. These applications are called relational database management systems (RDMBS)."
+  },
+  {
+    "objectID": "intro.html#sql-code-location",
+    "href": "intro.html#sql-code-location",
+    "title": "Introduction",
+    "section": "SQL code location",
+    "text": "SQL code location\nWhere to you write and run SQL?\nThis can be done two ways:\n\nStandalone SQL\nSQL can be written and submitted to the DBMS using a command-line interface or a GUI. Most people use a GUI. Writing standalone SQL is the way a lot of initial data analysis is done.\nStarting in Unit 3, you’ll use a database client GUI software application to connect to databases, write and submit SQL to the DBMS.\n\n\nEmbedded SQL\nSometimes doing analysis with standalone SQL is sufficient, but most data analysts need to eventually bring the initially wrangled data into a programming environment to use R or Python libraries for further analysis. So, SQL code is embedded into R or Python scripts.\n\n\n\n\n\n\nNote\n\n\n\nSQL runs in a RDBMS\nIt’s important to understand that when (for example) an R script contains SQL code that when the script runs the line of code that contains the SQL statement that the SQL statement is submitted to the database server pretty much just as if the SQL was being used standalone in a database client GUI. In brief, the database engine, which is part of the DBMS, doesn’t care if the SQL came from a GUI or was embedded in an R script.\n\n\nYou’ll get experience with embedding SQL in R and Python scripts later in this primer."
+  },
+  {
+    "objectID": "course_outline.html",
+    "href": "course_outline.html",
+    "title": "Course Outline",
+    "section": "",
+    "text": "Add course outline"
+  },
+  {
+    "objectID": "part_unit_1.html",
+    "href": "part_unit_1.html",
+    "title": "Unit 1",
+    "section": "",
+    "text": "Unit 1 gets you into using SQL right away.\nYou’ll start this primer using the W3Schools SQL tutorial online platform. This will allow you to write and run SQL without having to create a database or install any software."
+  },
+  {
+    "objectID": "unit_1_lesson_1.html#learning-objectives",
+    "href": "unit_1_lesson_1.html#learning-objectives",
+    "title": "Unit 1, Lesson 1",
+    "section": "Learning objectives",
+    "text": "Learning objectives\nAfter this lesson, you should be able to:\n\nUse SQL to specify the table containing the data you need\nUse SQL to specify the column(s) containing the data you need\nUse * to select all columns\nExplain the purpose of SQL keywords and clauses\nUse W3Schools to write and run SQL"
+  },
+  {
+    "objectID": "unit_1_lesson_1.html#w3schools",
+    "href": "unit_1_lesson_1.html#w3schools",
+    "title": "Unit 1, Lesson 1",
+    "section": "W3Schools",
+    "text": "W3Schools\nW3Schools provides an online SQL tutorial platform the allows you to write and run SQL against a sample database (db). This platform enables you to quickly get hands-on experience using SQL.\nGo to this W3Schools web page.\nThe Database section on the right lists the tables in the db.\n\n\n\n\n\n\n\nNote\n\n\n\nTable\nA database is made up of tables. How data appears in a spreadsheets or a dataframe is a good analogy for a db table."
+  },
+  {
+    "objectID": "unit_1_lesson_1.html#select-specific-columns",
+    "href": "unit_1_lesson_1.html#select-specific-columns",
+    "title": "Unit 1, Lesson 1",
+    "section": "Select specific columns",
+    "text": "Select specific columns\nUse this W3Schools page\nEnter this SQL and click Run SQL\n\n\n\n\n\n\n\nNote\n\n\n\nFor brevity, in the future, I’ll just say “Run this SQL”.\n\n\nAfter you run the SQL, the W3Schools web page will show you the result set returned by the database engine when it ran your SQL.\n\n\n\n\n\n\nNote\n\n\n\nMy screenshots of the result set usually only show the first few records. When you run the SQL, you can scroll through the result set to see all the records.\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nRecall: we’re using W3Schools right now because I don’t want you to worry about creating a database to and installing database-related software on your computer. You’ll get a chance to do these things later in the primer. The focus now is for you to learn a few basics about SQL.\n\n\n\nSelect statement\nThe SQL you just ran is a select statement.\nSQL uses many type of statements, but the one most important for data analysis is the select statement.\nThings you can do with select include:\n\nFind facts (gain insights) about the data\nProfile (explore) the data\nPrepare (clean or transform) the data\n\nThe columns in the result set align to the columns listed after the SELECT keyword.\n\n\nKeywords\nUsually a select statement contains at least two keywords: SELECT and FROM. However, technically speaking, only the SELECT keyword is mandatory.\nUse this W3Schools page\nRun this SQL:\n\nResult set:\n\nDiscussion\nInstead of selecting data from a table, it selects data from the hard-coded character string.\n\n\n\n\n\n\nNote\n\n\n\nDon’t worry about the ugly “Expr1000” column heading. I’ll show you how to fix this later.\n\n\nOccasionally, you might want select from a literal, but practically speaking you’ll need both SELECT and FROM keywords in a select statement.\n\nSELECT identifies the columns you want to retrieve\nFROM identifies the table(s) you are select from\n\n\n\n\n\n\n\nNote\n\n\n\nTo keep things simple at the start of this primer, you’ll only select from a single table. Later, I’ll show you how to code selects where the data comes from multiple tables.\n\n\n\n\nClause\nThe word “clause” refers to a keyword and things you code right after it.\nThe statement, “SELECT CustomerName, Country FROM Customers;” contains two clauses.\nThe select clause: SELECT CustomerName, Country\nThe from clause: FROM Customers"
+  },
+  {
+    "objectID": "unit_1_lesson_1.html#select-all-columns",
+    "href": "unit_1_lesson_1.html#select-all-columns",
+    "title": "Unit 1, Lesson 1",
+    "section": "Select all columns",
+    "text": "Select all columns\nRun this SQL:\n\nResult set:\n\nDiscussion\nCoding an asterisk following SELECT tells the database engine to retrieve all columns from the table."
+  },
+  {
+    "objectID": "intro.html#primer-prerequisites",
+    "href": "intro.html#primer-prerequisites",
+    "title": "Introduction",
+    "section": "Primer Prerequisites",
+    "text": "Primer Prerequisites\nThis primer assumes:\n\nyou have no experience working with SQL or relational databases\nyou have at least novice-level skills coding either Python or R, ideally both"
+  },
+  {
+    "objectID": "intro.html#primer-learning-objectives",
+    "href": "intro.html#primer-learning-objectives",
+    "title": "Introduction",
+    "section": "Primer Learning Objectives",
+    "text": "Primer Learning Objectives\nAfter completing this primer, you should be able to:\n\nExplain basic concepts regarding the design and use of a relational database (db)\nDemonstrate intermediate-level skills for using SQL to select and wrangle data stored in a relational database\nUse command line and GUI applications to write standalone SQL and submit it a relational database management system (RDBMS)\nWrite R and Python scripts that contain embedded SQL\n\nThe premise that underlies the learning objectives for this primer is the data analysts mostly write SQL and submit it to a RDMBS in order to retrieve data and to wrangle data on the database server."
+  },
+  {
+    "objectID": "intro.html#chick-or-egg-problem",
+    "href": "intro.html#chick-or-egg-problem",
+    "title": "Introduction",
+    "section": "Chick or Egg Problem",
+    "text": "Chick or Egg Problem\nTeaching SQL presents a “chicken or egg problem”. Should you first teach about SQL or first teach about relational databases?\nActually, both need to be taught first, which is a tricky teaching task.\nBelow is a brief introduction the SQL and relational databases, including some about Relational Database Management Systems. In Unit 1, you’ll get hands-on experience and learn more about both."
+  },
+  {
+    "objectID": "intro.html#relational-database-management-system",
+    "href": "intro.html#relational-database-management-system",
+    "title": "Introduction",
+    "section": "Relational Database Management System",
+    "text": "Relational Database Management System\nA relational database management system (RDBMS) is an application that creates, manages and provides data stored in the relational database. Two very popular opens source (and free) are MySQL and PostgreSQL. Oracle and Microsoft SQL Server are commercial examples used by many organization. A very hihgly used RDBMS is a tiny, limited function, but very powerful one named SQLite.\nRelational Database Management Systems (DBMS) are very specialized, optimized systems. This is the place where high-traffic, high-processing data processing workloads need to execute. Data wrangling starts on the database server and then smaller sets of data can be brought into (for example) an R environment for further analysis, visualization, or modeling. Using the RDMBS to perform some types of data wrangling is far more efficient than doing so on the computer where (for example) an R script is running.\nBottom line, professional data analysts need to know SQL. At least most aspects of SQL select statement."
+  },
+  {
+    "objectID": "unit_1_lesson_2.html#learning-objectives",
+    "href": "unit_1_lesson_2.html#learning-objectives",
+    "title": "Lesson 2",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\nAfter this lesson, you should be able to:\n\nDescribe W3Schools tables\nExplain RDBMS basic concepts\nExplain how SQL interacts with a RDBMS"
+  },
+  {
+    "objectID": "unit_1_lesson_2.html#w3schools-database",
+    "href": "unit_1_lesson_2.html#w3schools-database",
+    "title": "Lesson 2",
+    "section": "W3Schools Database",
+    "text": "W3Schools Database\nIn the prior lesson you saw this list of tables in the database (db) provided by the W3Schools website for learning SQL.\nThese tables are good for learning SQL because they contain a small number of rows. So, you can visually inspect them to verify the result sets.\nBest of all, you don’t need to do anything to use the database while you’re initially learning SQL.\nClick on each table. W3Schools will run a SELECT * query. Examine the columns and rows returned."
+  },
+  {
+    "objectID": "unit_1_lesson_2.html#rdbms-in-a-nutshell",
+    "href": "unit_1_lesson_2.html#rdbms-in-a-nutshell",
+    "title": "Lesson 2",
+    "section": "RDBMS in a nutshell",
+    "text": "RDBMS in a nutshell\nThe essence of a relational database management system (RDMBS) is that data is organized into tables, each of which is akin to a spreadsheet or a dataframe. When you need data that’s present in multiple table, there’s a way to temporarily connect the tables together via SQL.\nClick on the Orders table, the web page will run a SELECT * query against that table. See that it contains the OrderID column. Next, click on the OrderDetails table. See that it also contains a column named OrderID. If you want to run select statement that gets data from both tables then you use the JOIN keyword to temporarily merge these tables together. We’ll discuss doing joins later.\n\n\n\n\n\n\nNote\n\n\n\nHistory and terminology\nThe relational data model is the only way to organize and store data in a database. IBM had previously successfully marketed a database management system (DBMS) named IMS that was based on storing data in a hierarchical (tree-like) structure.\nDr. E.F. Codd published a paper in 1970 that described the mathematical concepts that underpin relational databases. IBM and Oracle used Codd’s ideas to build and market relational database management systems (RDBMS). Other companies soon did the same.\n\nArcane terminology you probably won’t use but might see:\nA db table is technically called a “relation”.\nA db column is sometimes call an “attribute”, but technically (and rarely) called a “tuple”.\n\nNote only are tables call “relations”, but they also relate to each other based on common columns. This is why later in this primer, you’ll learn the importance of select from multiple (temporarily joined) tables to access data that’s spread across multiple table.\nWant more now? If so, click on this link."
+  },
+  {
+    "objectID": "unit_1_lesson_2.html#introduction",
+    "href": "unit_1_lesson_2.html#introduction",
+    "title": "Lesson 2",
+    "section": "Introduction",
+    "text": "Introduction\nIn the prior lesson, you got a small taste of SQL by writing it and see the results.\nYou wont’ be writing any SQL in this lesson. Instead, before going deeper into SQL, it’s important that you learn some basics about relational databases.\nIn this lesson, you’ll get:\n\nmore information about the W3Schools database and why it’s used initially in this primer\na further introduction into what’s a RDBMS\nconcepts about how SQL and an RDBMS work together"
+  },
+  {
+    "objectID": "unit_1_lesson_2.html#sql-and-rdbms",
+    "href": "unit_1_lesson_2.html#sql-and-rdbms",
+    "title": "Lesson 2",
+    "section": "SQL and RDBMS",
+    "text": "SQL and RDBMS\n\n\n\n\n\n\nNote\n\n\n\nI recommend that you read through all of this SQL and RDBMS section and then go back and read through it again.\n\n\nConsider this model. It’s high level and not technically 100% accurate/complete, but it conveys essential concepts about how SQL interacts with an RDBMS.\n\n\n#1 Database client\nGenerally speaking, there are two parts of the database client.\nThe first part is the place where SQL source code exists. This part can be in a GUI that’s designed to be an editor where you write the SQL and click a Run SQL type of button. The W3Schools page is giving you this GUI. You’ll see other options for this part later in this primer.\nThe second part of the database client is usually some kind of a library that contains the functionality for implementing an interface to the database engine (see below).\nIn short, the db client gives you a place for the SQL code and way to submit it to the db engine via the database interface library.\nThere’s another aspect (like the flip side) of the database client, which is the part of the database interface that receives the result set returned by the database engine. What you see in the Result Set part of the W3Schools page is the “flip side” of the client.\n\n\n#2 Database engine\nThe database engine is a primary component of the RDBMS application. Often the term “db engine” is used interchangeable with “RDMBS”. There are other components of the RDBMS, but you, as the data analyst, don’t usually need to think about them. It’s fine if you use the phrase, “my SQL is parses by the db engine so the engine can create an access plan for how to read the database to get the data I need.”\nThe db engine receives data that is physically read from the database and constructs the result set. The result set is then returned to the database interface (dbi), which ultimately returns it the part of the database client where it can be displayed in a result set window in a GUI (or placed into a dataframe if the db client is (for example) a Python program that has embedded SQL.\n\n\n#3 Data Access Plan\nAfter the db engine parses the SQL then it dynamically creates a program (written in a lower-level language) for how to physically read/write the database file. This program is called the database access plan.\n\n\n#4 Database\nThis cylinder symbol represents the database. The square contained within it represent tables in the db.\nKeep in mind that physically the database is a file stored on your file system. Actually, in most relational database management systems, there are several files that contain different parts of the database, index file, data files, etc. The good news is that the RDMBS manages all physical reads/writes with these files so you, as a data analyst don’t typically have to think about the physical files that makeup the database.\n\n\n#5 RDBMS\nThe database engine as well as other components not shown in the above model along with the files that makeup database."
+  },
+  {
+    "objectID": "unit_1_lesson_3.html#learning-objectives",
+    "href": "unit_1_lesson_3.html#learning-objectives",
+    "title": "Unit 1, Lesson 3",
+    "section": "Learning objectives",
+    "text": "Learning objectives\nAfter this lesson, you should be able to:\n\nExplain single and multiple-level sorts\nExplain sort order\nWrite SQL to perform simple and complex sorts"
+  },
+  {
+    "objectID": "unit_1_lesson_3.html#order-by-clause",
+    "href": "unit_1_lesson_3.html#order-by-clause",
+    "title": "Unit 1, Lesson 3",
+    "section": "ORDER BY clause",
+    "text": "ORDER BY clause\nUse this W3Schools page.\nRun this SQL:\n\nResult set:\n\nThe database engine does not guarantee how rows in the result set will be ordered. You can guarantee the order by coding an order by clause.\nThe first column name coded after the ORDER BY keywords specifies the first-level ordering and the second column specifies the second-level ordering.\n\n\n\n\n\n\nNote\n\n\n\nWhen talking about the above SQL, you’d say, “I’m ordering first on Country and then within each Country, I’m ordering by City.” Actually, in a real-world conversation, you’d shorten it to, “I’m ordering by Country and City.”.\nSince ascending ordering is the default behavior of the order by clause, you’d wouldn’t say “I am ordering ascending”. Instead, you’d only say I’m order descending only if you had coded DESC”.\nThere’s no strict limit to the number of ordering levels allowed, but for readability and performance reasons, typically you won’t order by more than three levels."
+  },
+  {
+    "objectID": "course_roadmap.html",
+    "href": "course_roadmap.html",
+    "title": "Course Outline",
+    "section": "",
+    "text": "Add course outline"
+  },
+  {
+    "objectID": "course_roadmap.html#section-1-week-1",
+    "href": "course_roadmap.html#section-1-week-1",
+    "title": "Course Roadmap",
+    "section": "Section 1 (Week 1)",
+    "text": "Section 1 (Week 1)\n\nUnits 1 and 2\nUse the W3School online SQL platform to dive in quickly\nBasic SQL syntax and functionality for the select statement\nEssential concepts about relational database management systems (DBMS)"
+  },
+  {
+    "objectID": "course_roadmap.html#section-2-week-2",
+    "href": "course_roadmap.html#section-2-week-2",
+    "title": "Course Roadmap",
+    "section": "Section 2 (Week 2)",
+    "text": "Section 2 (Week 2)\n\nUnit 3\nInstall the SQLite DBMS\nUse the sqlite3 command line interface (CLI)\n\n\nUnit 4\nInstall DB Browser\nUse the DB Browser graphical user interface (GUI)\nIn both units 3 and 4:\n\nLearn more about SQL select features\nApply SQL to EDA, data cleaning and transformation"
+  },
+  {
+    "objectID": "course_roadmap.html#section-3-week-3",
+    "href": "course_roadmap.html#section-3-week-3",
+    "title": "Course Roadmap",
+    "section": "Section 3 (Week 3)",
+    "text": "Section 3 (Week 3)\n\nUnit 5\nUse SQL in R\n\n\nUnit 6\nUse SQL in Python\nIn both units 5 and 6:\n\nContinue developing intermediate-level SQL skills\nCombine SQL with R/Python to perform professional-level data analysis"
+  },
+  {
+    "objectID": "course_roadmap.html#section-4-week-4",
+    "href": "course_roadmap.html#section-4-week-4",
+    "title": "Course Roadmap",
+    "section": "Section 4 (Week 4)",
+    "text": "Section 4 (Week 4)\n\nUnit 7\nData analysis project assignment\n\n\nUnit 8\nPostgreSQL\n\nInstall and run a PostgreSQL server\nInstall pgAdmin (GUI to run standalone SQL)\n\nReference examples:\n\nUse PostgreSQL in an R script\nUse PostgreSQL in a Python script\n\nThis unit is a tutorial. Hands-on activities are optional."
+  }
+]
