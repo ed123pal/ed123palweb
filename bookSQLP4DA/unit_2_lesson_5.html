@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>SQL Primer for Data Analysts - Unit 1</title>
+<title>SQL Primer for Data Analysts - Lesson 5</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./unit_1_lesson_1.html" rel="next">
-<link href="./course_roadmap.html" rel="prev">
+<link href="./part_unit_2.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -74,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./part_unit_1.html">Unit 1</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./part_unit_2.html">Unit 2</a></li><li class="breadcrumb-item"><a href="./unit_2_lesson_5.html">Lesson 5</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -130,13 +129,13 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./part_unit_1.html" class="sidebar-item-text sidebar-link active">
+            <a href="./part_unit_1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Unit 1</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./unit_1_lesson_1.html" class="sidebar-item-text sidebar-link">
@@ -161,33 +160,21 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Lesson 4</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./unit_1_lesson_5.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lesson 5</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./unit_1_lesson_6.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lesson 6</span></a>
-  </div>
-</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="./part_unit_2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Unit 2</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./unit_2_lesson_7.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lesson 7</span></a>
+  <a href="./unit_2_lesson_5.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Lesson 5</span></a>
   </div>
 </li>
       </ul>
@@ -202,10 +189,9 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#w3schools---quick-start" id="toc-w3schools---quick-start" class="nav-link active" data-scroll-target="#w3schools---quick-start">W3Schools - quick start</a></li>
-  <li><a href="#functions" id="toc-functions" class="nav-link" data-scroll-target="#functions">Functions</a></li>
-  <li><a href="#goal-oriented-sql" id="toc-goal-oriented-sql" class="nav-link" data-scroll-target="#goal-oriented-sql">Goal-oriented SQL</a></li>
-  <li><a href="#where-clause" id="toc-where-clause" class="nav-link" data-scroll-target="#where-clause">WHERE clause</a></li>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning objectives</a></li>
+  <li><a href="#customers-by-country" id="toc-customers-by-country" class="nav-link" data-scroll-target="#customers-by-country">Customers by country</a></li>
+  <li><a href="#top-5-countries" id="toc-top-5-countries" class="nav-link" data-scroll-target="#top-5-countries">Top 5 countries</a></li>
   </ul>
 </nav>
     </div>
@@ -214,7 +200,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Unit 1</h1>
+<h1 class="title">Lesson 5</h1>
 </div>
 
 
@@ -229,35 +215,47 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="w3schools---quick-start" class="level2">
-<h2 class="anchored" data-anchor-id="w3schools---quick-start">W3Schools - quick start</h2>
-<p>Unit 1 gets you into using SQL right away.</p>
-<p>You’ll start this primer using the W3Schools SQL tutorial online platform. This will allow you to write and run SQL without having to create a database or install any software.</p>
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
+<p>After this lesson, you should be able to:</p>
+<ol type="1">
+<li><p>Apply basic SQL skills to discover insights</p></li>
+<li><p>Write SQL in the context of data analysis goals</p></li>
+<li><p>Use special-purpose SQL features</p></li>
+<li><p>Explain ANSI standards</p></li>
+</ol>
 </section>
-<section id="functions" class="level2">
-<h2 class="anchored" data-anchor-id="functions">Functions</h2>
-<p>SQL is a declarative programming language. It contains many built-in functions. You code calls to these functions to essentially “declare” what you what the db engine to do for you. You’ll get a start using functions in this unit.</p>
+<section id="customers-by-country" class="level2">
+<h2 class="anchored" data-anchor-id="customers-by-country">Customers by country</h2>
+<p>Goal: Find how many customers are in each country.</p>
+<p>Use this <a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_count">W3Schools page</a>.</p>
+<p>Run this SQL:</p>
+<p><img src="images/unit_2_lesson_5_ss_1a.png" class="img-fluid"></p>
+<p>Result set:</p>
+<p><img src="images/unit_2_lesson_5_ss_1b.png" class="img-fluid"></p>
 </section>
-<section id="goal-oriented-sql" class="level2">
-<h2 class="anchored" data-anchor-id="goal-oriented-sql">Goal-oriented SQL</h2>
-<p>As you progress through this unit, you’ll find that even with a few SQL skills you can start using SQL as a tool for data analysis.</p>
-<p>As you’ll see in later lessons in this unit, when you write SQL, start by trying to verbalize a goal in the context of doing data analysis. Taking this goal-oriented approach will help you to design your SQL statement. Your goals for using SQL could include:</p>
-<ul>
-<li><p>Getting to know your data (profiling)</p></li>
-<li><p>Discovering facts contained in your data (insights)</p></li>
-<li><p>Cleaning or transforming your data for further analysis (preparing)</p></li>
-</ul>
-</section>
-<section id="where-clause" class="level2">
-<h2 class="anchored" data-anchor-id="where-clause">WHERE clause</h2>
-<p>The last lesson hits on the important “where clause” that’s seen in most select statements. This clause allows you to specify which rows to select for processing.</p>
-<p>Data analysts working in large organizations often work with db tables containing a huge number of rows. Selecting all rows is usually undesirable for many reasons, including:</p>
-<ul>
-<li><p>Network traffic costs</p></li>
-<li><p>Run-time performance</p></li>
-<li><p>Local programming environment constraints</p></li>
-<li><p>Security and privacy concerns</p></li>
-</ul>
+<section id="top-5-countries" class="level2">
+<h2 class="anchored" data-anchor-id="top-5-countries">Top 5 countries</h2>
+<p>Some data analysis activities are so frequently done that special-purpose “convenience” features have been built into SQL. An example is the TOP clause that’s used to specify how many rows the db engine should return in the result set.</p>
+<p>Goal: Find the five countries with the most customers.</p>
+<p>Use this <a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_top">W3Schools page</a>.</p>
+<p>Run this SQL:</p>
+<p><img src="images/unit_2_lesson_5_ss_2a.png" class="img-fluid"></p>
+<p>Result set: (See there are only 5 records because of the TOP 5 in the SQL.)</p>
+<p><img src="images/unit_2_lesson_5_ss_2b.png" class="img-fluid"></p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Most SQL that you’ll see in this primer is used the same way in all RDBMS applications. This is because an organization named “American National Standards Institute (ANSI)” has defined a standardized syntax and behavior for SQL. Most RDBMS applications comply with ANSI standards. Some SQL is not in scope of the ANSI standards. For example the TOP clause used above is called the LIMIT clause by the MySQL RDBMS. Both TOP and LIMIT work pretty much the same. Check the documentation for your specific RDBMS for details when needed.</p>
+</div>
+</div>
 
 
 </section>
@@ -498,14 +496,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./course_roadmap.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Course Roadmap</span>
+      <a href="./part_unit_2.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Unit 2</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./unit_1_lesson_1.html" class="pagination-link">
-        <span class="nav-page-text">Lesson 1</span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->

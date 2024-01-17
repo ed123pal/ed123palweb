@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "SQL Primer for Data Analysts",
     "section": "",
-    "text": "Preface\nI created this primer so you can quickly learn the basics of SQL in the context of performing data analysis. Here’s what I mean:\n\nAs a data analyst, you need to learn just part of SQL to do most of your work.\nAs much as possible, this primer teaches SQL as if you’re doing data analysis.\n\nThere’s much to know about SQL, but this primer is intentionally lean. It’s accelerated learning.\nAfter completing this primer, you should be able to use SQL to retrieve and wrangle data. You’ll also be prepared to dive deeper into SQL when needed."
+    "text": "Preface\nI created this primer so you can quickly learn the basics of SQL in the context of performing data analysis. Here’s what I mean:\n\nAs a data analyst, you need to learn just part of SQL to do most of your work.\nAs much as possible, this primer teaches SQL as if you’re doing data analysis.\n\nThere’s much to know about SQL, but this primer is intentionally lean. It’s accelerated learning, focusing on what a data analysts needs to know.\nAfter completing this primer, you should be able to use SQL to retrieve and wrangle data. You’ll also be prepared to dive deeper into SQL when needed."
   },
   {
     "objectID": "intro.html",
@@ -79,28 +79,28 @@
   {
     "objectID": "unit_1_lesson_1.html#learning-objectives",
     "href": "unit_1_lesson_1.html#learning-objectives",
-    "title": "Unit 1, Lesson 1",
+    "title": "Lesson 1",
     "section": "Learning objectives",
     "text": "Learning objectives\nAfter this lesson, you should be able to:\n\nUse SQL to specify the table containing the data you need\nUse SQL to specify the column(s) containing the data you need\nUse * to select all columns\nExplain the purpose of SQL keywords and clauses\nUse W3Schools to write and run SQL"
   },
   {
     "objectID": "unit_1_lesson_1.html#w3schools",
     "href": "unit_1_lesson_1.html#w3schools",
-    "title": "Unit 1, Lesson 1",
+    "title": "Lesson 1",
     "section": "W3Schools",
     "text": "W3Schools\nW3Schools provides an online SQL tutorial platform the allows you to write and run SQL against a sample database (db). This platform enables you to quickly get hands-on experience using SQL.\nGo to this W3Schools web page.\nThe Database section on the right lists the tables in the db.\n\n\n\n\n\n\n\nNote\n\n\n\nTable\nA database is made up of tables. How data appears in a spreadsheets or a dataframe is a good analogy for a db table."
   },
   {
     "objectID": "unit_1_lesson_1.html#select-specific-columns",
     "href": "unit_1_lesson_1.html#select-specific-columns",
-    "title": "Unit 1, Lesson 1",
+    "title": "Lesson 1",
     "section": "Select specific columns",
-    "text": "Select specific columns\nUse this W3Schools page\nEnter this SQL and click Run SQL\n\n\n\n\n\n\n\nNote\n\n\n\nFor brevity, in the future, I’ll just say “Run this SQL”.\n\n\nAfter you run the SQL, the W3Schools web page will show you the result set returned by the database engine when it ran your SQL.\n\n\n\n\n\n\nNote\n\n\n\nMy screenshots of the result set usually only show the first few records. When you run the SQL, you can scroll through the result set to see all the records.\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nRecall: we’re using W3Schools right now because I don’t want you to worry about creating a database to and installing database-related software on your computer. You’ll get a chance to do these things later in the primer. The focus now is for you to learn a few basics about SQL.\n\n\n\nSelect statement\nThe SQL you just ran is a select statement.\nSQL uses many type of statements, but the one most important for data analysis is the select statement.\nThings you can do with select include:\n\nFind facts (gain insights) about the data\nProfile (explore) the data\nPrepare (clean or transform) the data\n\nThe columns in the result set align to the columns listed after the SELECT keyword.\n\n\nKeywords\nUsually a select statement contains at least two keywords: SELECT and FROM. However, technically speaking, only the SELECT keyword is mandatory.\nUse this W3Schools page\nRun this SQL:\n\nResult set:\n\nDiscussion\nInstead of selecting data from a table, it selects data from the hard-coded character string.\n\n\n\n\n\n\nNote\n\n\n\nDon’t worry about the ugly “Expr1000” column heading. I’ll show you how to fix this later.\n\n\nOccasionally, you might want select from a literal, but practically speaking you’ll need both SELECT and FROM keywords in a select statement.\n\nSELECT identifies the columns you want to retrieve\nFROM identifies the table(s) you are select from\n\n\n\n\n\n\n\nNote\n\n\n\nTo keep things simple at the start of this primer, you’ll only select from a single table. Later, I’ll show you how to code selects where the data comes from multiple tables.\n\n\n\n\nClause\nThe word “clause” refers to a keyword and things you code right after it.\nThe statement, “SELECT CustomerName, Country FROM Customers;” contains two clauses.\nThe select clause: SELECT CustomerName, Country\nThe from clause: FROM Customers"
+    "text": "Select specific columns\nUse this W3Schools page\nEnter this SQL and click Run SQL\n\n\n\n\n\n\n\nNote\n\n\n\nFor brevity, in the future, I’ll just say “Run this SQL”.\n\n\nAfter you run the SQL, the W3Schools web page will show you the result set returned by the database engine when it ran your SQL.\n\n\n\n\n\n\nNote\n\n\n\nThroughout this primer, my screenshots of the result set usually only show the first few records. When you run the SQL, you can scroll through the result set to see all the records.\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nRecall: we’re using W3Schools right now because I don’t want you to worry about creating a database to and installing database-related software on your computer. You’ll get a chance to do these things later in the primer. The focus now is for you to learn a few basics about SQL.\n\n\n\nSelect statement\nThe SQL you just ran is a select statement.\nSQL uses many type of statements, but the one most important for data analysis is the select statement.\nThings you can do with select include:\n\nFind facts (gain insights) about the data\nProfile (explore) the data\nPrepare (clean or transform) the data\n\nThe columns in the result set align to the columns listed after the SELECT keyword.\n\n\nKeywords\nUsually a select statement contains at least two keywords: SELECT and FROM. However, technically speaking, only the SELECT keyword is mandatory.\nUse this W3Schools page\nRun this SQL:\n\nResult set:\n\nDiscussion\nInstead of selecting data from a table, it selects data from the hard-coded character string.\n\n\n\n\n\n\nNote\n\n\n\nDon’t worry about the ugly “Expr1000” column heading. I’ll show you how to fix this later.\n\n\nOccasionally, you might want select from a literal, but practically speaking you’ll need both SELECT and FROM keywords in a select statement.\n\nSELECT identifies the columns you want to retrieve\nFROM identifies the table(s) you are select from\n\n\n\n\n\n\n\nNote\n\n\n\nTo keep things simple at the start of this primer, you’ll only select from a single table. Later, I’ll show you how to code selects where the data comes from multiple tables.\n\n\n\n\nClause\nThe word “clause” refers to a keyword and things you code right after it.\nThe statement, “SELECT CustomerName, Country FROM Customers;” contains two clauses.\nThe select clause: SELECT CustomerName, Country\nThe from clause: FROM Customers"
   },
   {
     "objectID": "unit_1_lesson_1.html#select-all-columns",
     "href": "unit_1_lesson_1.html#select-all-columns",
-    "title": "Unit 1, Lesson 1",
+    "title": "Lesson 1",
     "section": "Select all columns",
     "text": "Select all columns\nRun this SQL:\n\nResult set:\n\nDiscussion\nCoding an asterisk following SELECT tells the database engine to retrieve all columns from the table."
   },
@@ -170,14 +170,14 @@
   {
     "objectID": "unit_1_lesson_3.html#learning-objectives",
     "href": "unit_1_lesson_3.html#learning-objectives",
-    "title": "Unit 1, Lesson 3",
+    "title": "Lesson 3",
     "section": "Learning objectives",
     "text": "Learning objectives\nAfter this lesson, you should be able to:\n\nExplain single and multiple-level sorts\nExplain sort order\nWrite SQL to perform simple and complex sorts"
   },
   {
     "objectID": "unit_1_lesson_3.html#order-by-clause",
     "href": "unit_1_lesson_3.html#order-by-clause",
-    "title": "Unit 1, Lesson 3",
+    "title": "Lesson 3",
     "section": "ORDER BY clause",
     "text": "ORDER BY clause\nUse this W3Schools page.\nRun this SQL:\n\nResult set:\n\nThe database engine does not guarantee how rows in the result set will be ordered. You can guarantee the order by coding an order by clause.\nThe first column name coded after the ORDER BY keywords specifies the first-level ordering and the second column specifies the second-level ordering.\n\n\n\n\n\n\nNote\n\n\n\nWhen talking about the above SQL, you’d say, “I’m ordering first on Country and then within each Country, I’m ordering by City.” Actually, in a real-world conversation, you’d shorten it to, “I’m ordering by Country and City.”.\nSince ascending ordering is the default behavior of the order by clause, you’d wouldn’t say “I am ordering ascending”. Instead, you’d only say I’m order descending only if you had coded DESC”.\nThere’s no strict limit to the number of ordering levels allowed, but for readability and performance reasons, typically you won’t order by more than three levels."
   },
@@ -215,5 +215,180 @@
     "title": "Course Roadmap",
     "section": "Section 4 (Week 4)",
     "text": "Section 4 (Week 4)\n\nUnit 7\nData analysis project assignment\n\n\nUnit 8\nPostgreSQL\n\nInstall and run a PostgreSQL server\nInstall pgAdmin (GUI to run standalone SQL)\n\nReference examples:\n\nUse PostgreSQL in an R script\nUse PostgreSQL in a Python script\n\nThis unit is a tutorial. Hands-on activities are optional."
+  },
+  {
+    "objectID": "unit_1_lesson_4.html#learning-objectives",
+    "href": "unit_1_lesson_4.html#learning-objectives",
+    "title": "Lesson 4",
+    "section": "Learning objectives",
+    "text": "Learning objectives\nAfter this lesson, you should be able to:\n\nExplain how SQL functions work\nUse SQL functions\nWrite readable SQL code"
+  },
+  {
+    "objectID": "unit_1_lesson_4.html#sql-functions",
+    "href": "unit_1_lesson_4.html#sql-functions",
+    "title": "Lesson 4",
+    "section": "SQL functions",
+    "text": "SQL functions\n\nSUBSTRING\n\n\nUPPER\nUse this W3School page.\nRun this SQL:\n\nResult set:\n\nThe result set contains one row that corresponds to each row in the Customers table.\nThe result set contains three columns. SQL built-in functions were used when creating the second and third columns. The SQL SUBSTRING and UPPER functions work like similar functions you’ve likely seen in other programming languages.\n\n\n\n\n\n\nNote\n\n\n\nIf functions are new to you or if you need a fresher, here’s a quick description.\nMost SQL functions you’ll use are built-in, i.e. they’re always are available.\nYou use the function by coding it’s name followed by arguments enclosed in parenthesis. Sometimes you’ll hear people say, “call” or “invoke” instead of “use”.\nThe values in the arguments are passed into the function when you call it. These values are used by the function’s code. The first argument is typically the name of column that you want the function to act on and the others provide details that direct the function’s behavior, i.e. what you want it to do with or to the values in the column.\nIn the above SQL, the call to SUBSTRING requires arguments so the function will know know where to start and end the sub stringing. The UPPER function only needs the first argument since it will always upper case the entire string.\n\n\nSee the above SQL specifies the alias “PostalCode3” for the second column. I coded this alias so that anyone looking at the result set might assume this column contains three characters from the PostalCode column of the Customers table.\n\n\n\n\n\n\nNote\n\n\n\nSee in the above result set the second row for Austria has a 3-position postal code of 801. This row comes after the Austria row where the postal code is 501. It appears the result set is ordered first by country and then by postal code, but the order by clause only contains Country. The 801 row coming after the 501 row is by chance. If you wanted this order to always happen you’d need to code the order by clause accordingly."
+  },
+  {
+    "objectID": "unit_1_lesson_4.html#readable-code",
+    "href": "unit_1_lesson_4.html#readable-code",
+    "title": "Lesson 4",
+    "section": "Readable code",
+    "text": "Readable code\nSQL select statements can become large and complex. This can make readability and therefore, maintainability difficult.\nThe above SQL contains several clauses and is beginning to get a little complex.\nIt’s good coding style to spread a complex SQL statement across several lines. Pretty much where you breakup the statement doesn’t matter to the db engine, including how you choose to indent. It’s largely a matter of personal preference. If you work in an organization you will probably be expected to comply with its coding standards."
+  },
+  {
+    "objectID": "part_unit_2.html",
+    "href": "part_unit_2.html",
+    "title": "Unit 2",
+    "section": "",
+    "text": "You’re already getting skilled at using SQL for data analysis, but you’re sill missing one important feature. Some people would say in the most important feature. Here’s why.\nThe essence of a relational database is that data is spread across multiple tables. Some tables contain the same (key) columns. Having these common columns in multiple tables allows the db engine to temporarily join tables together so that a select statement can retrieve data from multiple tables.\nMastering the join clause is an essential SQL skill for data analysts.\nYou’ll gain foundation knowledge about joins and related topics such as sub queries and common table expressions in this unit."
+  },
+  {
+    "objectID": "unit_2_lesson_5.html#learning-objectives",
+    "href": "unit_2_lesson_5.html#learning-objectives",
+    "title": "Lesson 5",
+    "section": "Learning objectives",
+    "text": "Learning objectives\nAfter this lesson, you should be able to:\n\nApply basic SQL skills to discover insights\nWrite SQL in the context of data analysis goals\nUse special-purpose SQL features\nExplain ANSI standards"
+  },
+  {
+    "objectID": "unit_2_lesson_5.html#customers-by-country",
+    "href": "unit_2_lesson_5.html#customers-by-country",
+    "title": "Lesson 5",
+    "section": "Customers by country",
+    "text": "Customers by country\nGoal: Find how many customers are in each country.\nUse this W3Schools page.\nRun this SQL:\n\nResult set:"
+  },
+  {
+    "objectID": "unit_2_lesson_5.html#top-5-countries",
+    "href": "unit_2_lesson_5.html#top-5-countries",
+    "title": "Lesson 5",
+    "section": "Top 5 countries",
+    "text": "Top 5 countries\nSome data analysis activities are so frequently done that special-purpose “convenience” features have been built into SQL. An example is the TOP clause that’s used to specify how many rows the db engine should return in the result set.\nGoal: Find the five countries with the most customers.\nUse this W3Schools page.\nRun this SQL:\n\nResult set: (See there are only 5 records because of the TOP 5 in the SQL.)\n\n\n\n\n\n\n\nNote\n\n\n\nMost SQL that you’ll see in this primer is used the same way in all RDBMS applications. This is because an organization named “American National Standards Institute (ANSI)” has defined a standardized syntax and behavior for SQL. Most RDBMS applications comply with ANSI standards. Some SQL is not in scope of the ANSI standards. For example the TOP clause used above is called the LIMIT clause by the MySQL RDBMS. Both TOP and LIMIT work pretty much the same. Check the documentation for your specific RDBMS for details when needed."
+  },
+  {
+    "objectID": "unit_1_lesson_5.html#learning-objectives",
+    "href": "unit_1_lesson_5.html#learning-objectives",
+    "title": "Lesson 5",
+    "section": "Learning objectives",
+    "text": "Learning objectives\nAfter this lesson, you should be able to:\n\nApply basic SQL skills to discover insights\nWrite SQL in the context of data analysis goals\nUse special-purpose SQL features\nExplain ANSI standards"
+  },
+  {
+    "objectID": "unit_1_lesson_5.html#customers-by-country",
+    "href": "unit_1_lesson_5.html#customers-by-country",
+    "title": "Lesson 5",
+    "section": "Customers by country",
+    "text": "Customers by country\nUse this W3Schools page.\nRun this SQL:\n\nResult set:\n\n\nDiscussion\nThe above SQL provides insight from your data. Specifically, you’re finding out how your customers are distributed across the countries where the company does business.\nCOUNT is an example of an aggregate function. You’ll use many aggregate functions when coding SQL. In short, an aggregate function first works with multiple rows and then does something to “aggregate” information from those rows into a single value.\nAnother interesting aspect of the above SQL is that it performs implicit grouping. Since Country was passed as an argument in the call to the COUNT functioin, the db engine selects all of the rows and then forms a group for each country. Next it counts how many customer are in group to determine the values seen in the CustomerCount column of the result set.\n\n\n\n\n\n\nNote\n\n\n\nBe aware the above description of what the db engine does is a “logical” description. Physically what the db engine does when reading the database and forming the result set can be different based on the optimization logic and other factors specific to the RDBMS."
+  },
+  {
+    "objectID": "unit_1_lesson_5.html#top-5-countries",
+    "href": "unit_1_lesson_5.html#top-5-countries",
+    "title": "Lesson 5",
+    "section": "Top 5 countries",
+    "text": "Top 5 countries\nSome data analysis activities are so frequently done that special-purpose “convenience” features have been built into SQL. An example is the TOP clause that’s used to specify how many rows the db engine should return in the result set.\nUse this W3Schools page.\nRun this SQL:\n\nResult set:\n\n\nDiscussion\nThere are only 5 records because of the TOP 5 coded in the SQL.\n\n\n\n\n\n\nNote\n\n\n\nMost SQL that you’ll see in this primer is used the same way in all RDBMS applications. This is because an organization named “American National Standards Institute (ANSI)” has defined a standardized syntax and behavior for SQL. Most RDBMS applications comply with ANSI standards. Some SQL is not in scope of the ANSI standards. For example the TOP clause used above is called the LIMIT clause by the MySQL RDBMS. Both TOP and LIMIT work pretty much the same. Check the documentation for your specific RDBMS for details when needed."
+  },
+  {
+    "objectID": "unit_2_lesson_9.html",
+    "href": "unit_2_lesson_9.html",
+    "title": "Unit 4, Lesson 1",
+    "section": "",
+    "text": "This is a second line."
+  },
+  {
+    "objectID": "unit_1_lesson_5.html#distinct-countries",
+    "href": "unit_1_lesson_5.html#distinct-countries",
+    "title": "Lesson 5",
+    "section": "Distinct countries",
+    "text": "Distinct countries\nPerhaps you don’t need to know how many customers are in each country, but you’d simply like a list of the countries where your business conducts business. For further insight, you’ll also like that list to specify each country and the cities within each country.\nUse this W3Schools page.\nRun this SQL:\n\nResult set:\n\n\nDiscussion\nIt’s easy to incorrectly think that DISTINCT is a function. It’s not. An important clue is that Country and City are not enclosed in parentheses.\nSpecifically, you might think DISTINCT an aggregate function. Again, DISTINCT is not a function. Like TOP, DISTINCT is also a SQL keyword. In short, it’s another SQL convenience feature.\nWhen the db engine sees DISTINCT it will create one row in the result set for each Country and City combination in the Customers table.\nAlso, see in the result set the rows are ordered as specified in the order by clause."
+  },
+  {
+    "objectID": "unit_1_lesson_6.html#learning-objectives",
+    "href": "unit_1_lesson_6.html#learning-objectives",
+    "title": "Lesson 6",
+    "section": "Learning objectives",
+    "text": "Learning objectives\nAfter this lesson, you should be able to:\n\nSpecify the rows you want to retrieve from a table\nExplain using a logical expression in a where clause\nExplain how case sensitivity applies to SQL"
+  },
+  {
+    "objectID": "unit_1_lesson_6.html#where-clause",
+    "href": "unit_1_lesson_6.html#where-clause",
+    "title": "Lesson 6",
+    "section": "where clause",
+    "text": "where clause\nUse this W3Schools page.\nSuppose you need to find all of your customers located in Berlin.\nRun this SQL:\n\nResult set:\n\n\nDiscussion\nThe select statement contains the WHERE keyword, which is one way to constrain how many rows are in the result set.\nThe result set contains one row because the Customers table contains just one row where the value of City is “Berlin”.\nSee also the results set contains three columns that appear in the same order the columns are listed after the SELECT keyword.\n\n\n\n\n\n\nNote\n\n\n\nBe careful about designing your select statement to build a sufficiently granular where clause. It didn’t happen because of data in the Customers table. Using the above SQL, you could have also selected rows for customers who live line in one of the many U.S. cities named Berlin.\n\n\n\n\nlogical expression\nThe fundamental part of the where clause is the logical expression that follows the WHERE keyword.\n\n\n\n\n\n\nNote\n\n\n\nlogical expression\nRecall a logical expression always resolves to true or false.\n\n\nThe db engine accesses each row in the table and substitutes values present in that row into the logical expression that follows the WHERE keyword. The db engine then evaluates the expression. If it resolves to TRUE data from that row is used for further processing by the db engine, otherwise that row is ignored.\n\n\n\n\n\n\nNote\n\n\n\nSee how in the preceding paragraph, I said “data from that row is used for further processing by the db engine”. I purposely did not say “data from that row is put into the result set”. Typically it is, but depending on other parts of the select statement, the data from that “true” row may be used by the db engine for other processing but still data from that “true” row might not appear in the result set. This is a somewhat complex point that will be demonstrated later in this primer.\n\n\n\n\nCase sensitivity\nSQL is not case sensitive except for when you code character literals. For example, the where clause in the above SQL contains the character string “Berlin”. Here case sensitivity is important because “Berlin” is how the city is spelled in the City column of the database."
+  },
+  {
+    "objectID": "unit_1_lesson_6.html#case-sensitivity",
+    "href": "unit_1_lesson_6.html#case-sensitivity",
+    "title": "Lesson 6",
+    "section": "Case sensitivity",
+    "text": "Case sensitivity\nSQL is not case sensitive except for when you code character literals. For example, the where clause in the above SQL contains the character string “Berlin”. Here case sensitivity is important because “Berlin” is how the city is spelled in the City column of the database."
+  },
+  {
+    "objectID": "unit_1_lesson_6.html#complex-logical-expression",
+    "href": "unit_1_lesson_6.html#complex-logical-expression",
+    "title": "Lesson 6",
+    "section": "Complex logical expression",
+    "text": "Complex logical expression\nThe next two SQL examples show how a logical expression can be complex to allow for fine selection of row(s). Even it’s complex, a valid logical expression will ultimately resolve to true or false.\nIn both of these examples, the goal is to get a count of customers in Brazil and Portugal. A business data analysis context might be the human resources department needs the counts to determine how customer service representatives to hire who speak Portuguese.\n\nOR operator\nUse this W3Schools page.\nRun this SQL:\n\nResult set:\n\n\n\nIN operator\nUse this W3Schools page.\nRun this SQL:\n\nResult set:\n\n\n\nDiscussion\nExamine the two preceding SQL statements and see the OR and IN operators produce the same results. Most people would say the IN operator makes the code more readable."
+  },
+  {
+    "objectID": "part_unit_1.html#w3schools---quick-start",
+    "href": "part_unit_1.html#w3schools---quick-start",
+    "title": "Unit 1",
+    "section": "W3Schools - quick start",
+    "text": "W3Schools - quick start\nUnit 1 gets you into using SQL right away.\nYou’ll start this primer using the W3Schools SQL tutorial online platform. This will allow you to write and run SQL without having to create a database or install any software."
+  },
+  {
+    "objectID": "part_unit_1.html#functions",
+    "href": "part_unit_1.html#functions",
+    "title": "Unit 1",
+    "section": "Functions",
+    "text": "Functions\nSQL is a declarative programming language. It contains many built-in functions. You code calls to these functions to essentially “declare” what you what the db engine to do for you. You’ll get a start using functions in this unit."
+  },
+  {
+    "objectID": "part_unit_1.html#goal-oriented-sql",
+    "href": "part_unit_1.html#goal-oriented-sql",
+    "title": "Unit 1",
+    "section": "Goal-oriented SQL",
+    "text": "Goal-oriented SQL\nAs you progress through this unit, you’ll find that even with a few SQL skills you can start using SQL as a tool for data analysis.\nAs you’ll see in later lessons in this unit, when you write SQL, start by trying to verbalize a goal in the context of doing data analysis. Taking this goal-oriented approach will help you to design your SQL statement. Your goals for using SQL could include:\n\nGetting to know your data (profiling)\nDiscovering facts contained in your data (insights)\nCleaning or transforming your data for further analysis (preparing)"
+  },
+  {
+    "objectID": "part_unit_1.html#where-clause",
+    "href": "part_unit_1.html#where-clause",
+    "title": "Unit 1",
+    "section": "WHERE clause",
+    "text": "WHERE clause\nThe last lesson hits on the important “where clause” that’s seen in most select statements. This clause allows you to specify which rows to select for processing.\nData analysts working in large organizations often work with db tables containing a huge number of rows. Selecting all rows is usually undesirable for many reasons, including:\n\nNetwork traffic costs\nRun-time performance\nLocal programming environment constraints\nSecurity and privacy concerns"
+  },
+  {
+    "objectID": "unit_2_lesson_7.html",
+    "href": "unit_2_lesson_7.html",
+    "title": "Lesson 7",
+    "section": "",
+    "text": "This is a second line."
+  },
+  {
+    "objectID": "part_unit_2.html#w3schools",
+    "href": "part_unit_2.html#w3schools",
+    "title": "Unit 2",
+    "section": "W3Schools",
+    "text": "W3Schools\nFor Unit 2, You’ll still use the W3Schools online platform in order to continue with an accelerated introduction to SQL.\nIn the next unit, you’ll set up a local SQL development environment on your computer."
+  },
+  {
+    "objectID": "part_unit_2.html#joining-tables",
+    "href": "part_unit_2.html#joining-tables",
+    "title": "Unit 2",
+    "section": "Joining tables",
+    "text": "Joining tables\nYou’ve developed novice skill in SQL for data analysis, but you’re sill missing joins. Some people would say this is the most important SQL feature. Here’s why.\nThe essence of a relational database is that data is spread across multiple tables. Some tables contain the same (key) columns. Having these common columns in multiple tables allows the db engine to temporarily join tables together so that a select statement can retrieve data from multiple tables.\nMastering the join clause is an essential SQL skill for data analysts.\nYou’ll gain foundation knowledge about joins and related topics such as sub queries and common table expressions in this unit."
+  },
+  {
+    "objectID": "unit_2_lesson_7.html#learning-objectives",
+    "href": "unit_2_lesson_7.html#learning-objectives",
+    "title": "Lesson 7",
+    "section": "Learning objectives",
+    "text": "Learning objectives\nAfter this lesson, you should be able to:\n\nSpecify the rows you want to retrieve from a table\nExplain using a logical expression in a where clause\nExplain how case sensitivity applies to SQL"
+  },
+  {
+    "objectID": "unit_2_lesson_7.html#inner-join",
+    "href": "unit_2_lesson_7.html#inner-join",
+    "title": "Lesson 7",
+    "section": "Inner join",
+    "text": "Inner join\nUse this W3Schools page.\nSuppose you need to find all of your customers located in Berlin.\nRun this SQL:\n\nResult set:"
   }
 ]

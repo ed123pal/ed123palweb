@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>SQL Primer for Data Analysts - Unit 1</title>
+<title>SQL Primer for Data Analysts - Lesson 4</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./unit_1_lesson_1.html" rel="next">
-<link href="./course_roadmap.html" rel="prev">
+<link href="./unit_1_lesson_5.html" rel="next">
+<link href="./unit_1_lesson_3.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./part_unit_1.html">Unit 1</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./part_unit_1.html">Unit 1</a></li><li class="breadcrumb-item"><a href="./unit_1_lesson_4.html">Lesson 4</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -130,7 +130,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./part_unit_1.html" class="sidebar-item-text sidebar-link active">
+            <a href="./part_unit_1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Unit 1</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -157,7 +157,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./unit_1_lesson_4.html" class="sidebar-item-text sidebar-link">
+  <a href="./unit_1_lesson_4.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Lesson 4</span></a>
   </div>
 </li>
@@ -202,10 +202,13 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#w3schools---quick-start" id="toc-w3schools---quick-start" class="nav-link active" data-scroll-target="#w3schools---quick-start">W3Schools - quick start</a></li>
-  <li><a href="#functions" id="toc-functions" class="nav-link" data-scroll-target="#functions">Functions</a></li>
-  <li><a href="#goal-oriented-sql" id="toc-goal-oriented-sql" class="nav-link" data-scroll-target="#goal-oriented-sql">Goal-oriented SQL</a></li>
-  <li><a href="#where-clause" id="toc-where-clause" class="nav-link" data-scroll-target="#where-clause">WHERE clause</a></li>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning objectives</a></li>
+  <li><a href="#sql-functions" id="toc-sql-functions" class="nav-link" data-scroll-target="#sql-functions">SQL functions</a>
+  <ul class="collapse">
+  <li><a href="#substring" id="toc-substring" class="nav-link" data-scroll-target="#substring">SUBSTRING</a></li>
+  <li><a href="#upper" id="toc-upper" class="nav-link" data-scroll-target="#upper">UPPER</a></li>
+  </ul></li>
+  <li><a href="#readable-code" id="toc-readable-code" class="nav-link" data-scroll-target="#readable-code">Readable code</a></li>
   </ul>
 </nav>
     </div>
@@ -214,7 +217,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Unit 1</h1>
+<h1 class="title">Lesson 4</h1>
 </div>
 
 
@@ -229,35 +232,67 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="w3schools---quick-start" class="level2">
-<h2 class="anchored" data-anchor-id="w3schools---quick-start">W3Schools - quick start</h2>
-<p>Unit 1 gets you into using SQL right away.</p>
-<p>You’ll start this primer using the W3Schools SQL tutorial online platform. This will allow you to write and run SQL without having to create a database or install any software.</p>
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
+<p>After this lesson, you should be able to:</p>
+<ol type="1">
+<li><p>Explain how SQL functions work</p></li>
+<li><p>Use SQL functions</p></li>
+<li><p>Write readable SQL code</p></li>
+</ol>
 </section>
-<section id="functions" class="level2">
-<h2 class="anchored" data-anchor-id="functions">Functions</h2>
-<p>SQL is a declarative programming language. It contains many built-in functions. You code calls to these functions to essentially “declare” what you what the db engine to do for you. You’ll get a start using functions in this unit.</p>
+<section id="sql-functions" class="level2">
+<h2 class="anchored" data-anchor-id="sql-functions">SQL functions</h2>
+<section id="substring" class="level3">
+<h3 class="anchored" data-anchor-id="substring">SUBSTRING</h3>
 </section>
-<section id="goal-oriented-sql" class="level2">
-<h2 class="anchored" data-anchor-id="goal-oriented-sql">Goal-oriented SQL</h2>
-<p>As you progress through this unit, you’ll find that even with a few SQL skills you can start using SQL as a tool for data analysis.</p>
-<p>As you’ll see in later lessons in this unit, when you write SQL, start by trying to verbalize a goal in the context of doing data analysis. Taking this goal-oriented approach will help you to design your SQL statement. Your goals for using SQL could include:</p>
-<ul>
-<li><p>Getting to know your data (profiling)</p></li>
-<li><p>Discovering facts contained in your data (insights)</p></li>
-<li><p>Cleaning or transforming your data for further analysis (preparing)</p></li>
-</ul>
+<section id="upper" class="level3">
+<h3 class="anchored" data-anchor-id="upper">UPPER</h3>
+<p>Use this <a href="https://www.w3schools.com/sql/trysqlserver.asp?filename=trysql_func_sqlserver_upper">W3School page</a>.</p>
+<p>Run this SQL:</p>
+<p><img src="images/unit_1_lesson_4_ss_1a.png" class="img-fluid"></p>
+<p>Result set:</p>
+<p><img src="images/unit_1_lesson_4_ss_1b.png" class="img-fluid"></p>
+<p>The result set contains one row that corresponds to each row in the Customers table.</p>
+<p>The result set contains three columns. SQL built-in functions were used when creating the second and third columns. The SQL SUBSTRING and UPPER functions work like similar functions you’ve likely seen in other programming languages.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>If functions are new to you or if you need a fresher, here’s a quick description.</p>
+<p>Most SQL functions you’ll use are built-in, i.e.&nbsp;they’re always are available.</p>
+<p>You use the function by coding it’s name followed by arguments enclosed in parenthesis. Sometimes you’ll hear people say, “call” or “invoke” instead of “use”.</p>
+<p>The values in the arguments are passed into the function when you call it. These values are used by the function’s code. The first argument is typically the name of column that you want the function to act on and the others provide details that direct the function’s behavior, i.e.&nbsp;what you want it to do with or to the values in the column.</p>
+<p>In the above SQL, the call to SUBSTRING requires arguments so the function will know know where to start and end the sub stringing. The UPPER function only needs the first argument since it will always upper case the entire string.</p>
+</div>
+</div>
+<p>See the above SQL specifies the alias “PostalCode3” for the second column. I coded this alias so that anyone looking at the result set might assume this column contains three characters from the PostalCode column of the Customers table.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>See in the above result set the second row for Austria has a 3-position postal code of 801. This row comes after the Austria row where the postal code is 501. It appears the result set is ordered first by country and then by postal code, but the order by clause only contains Country. The 801 row coming after the 501 row is by chance. If you wanted this order to always happen you’d need to code the order by clause accordingly.</p>
+</div>
+</div>
 </section>
-<section id="where-clause" class="level2">
-<h2 class="anchored" data-anchor-id="where-clause">WHERE clause</h2>
-<p>The last lesson hits on the important “where clause” that’s seen in most select statements. This clause allows you to specify which rows to select for processing.</p>
-<p>Data analysts working in large organizations often work with db tables containing a huge number of rows. Selecting all rows is usually undesirable for many reasons, including:</p>
-<ul>
-<li><p>Network traffic costs</p></li>
-<li><p>Run-time performance</p></li>
-<li><p>Local programming environment constraints</p></li>
-<li><p>Security and privacy concerns</p></li>
-</ul>
+</section>
+<section id="readable-code" class="level2">
+<h2 class="anchored" data-anchor-id="readable-code">Readable code</h2>
+<p>SQL select statements can become large and complex. This can make readability and therefore, maintainability difficult.</p>
+<p>The above SQL contains several clauses and is beginning to get a little complex.</p>
+<p>It’s good coding style to spread a complex SQL statement across several lines. Pretty much where you breakup the statement doesn’t matter to the db engine, including how you choose to indent. It’s largely a matter of personal preference. If you work in an organization you will probably be expected to comply with its coding standards.</p>
 
 
 </section>
@@ -498,13 +533,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./course_roadmap.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Course Roadmap</span>
+      <a href="./unit_1_lesson_3.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Lesson 3</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./unit_1_lesson_1.html" class="pagination-link">
-        <span class="nav-page-text">Lesson 1</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./unit_1_lesson_5.html" class="pagination-link">
+        <span class="nav-page-text">Lesson 5</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

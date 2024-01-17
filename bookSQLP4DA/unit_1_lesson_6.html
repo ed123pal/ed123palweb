@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>SQL Primer for Data Analysts - Unit 1</title>
+<title>SQL Primer for Data Analysts - Lesson 6</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./unit_1_lesson_1.html" rel="next">
-<link href="./course_roadmap.html" rel="prev">
+<link href="./part_unit_2.html" rel="next">
+<link href="./unit_1_lesson_5.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./part_unit_1.html">Unit 1</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./part_unit_1.html">Unit 1</a></li><li class="breadcrumb-item"><a href="./unit_1_lesson_6.html">Lesson 6</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -130,7 +130,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./part_unit_1.html" class="sidebar-item-text sidebar-link active">
+            <a href="./part_unit_1.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Unit 1</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -169,7 +169,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./unit_1_lesson_6.html" class="sidebar-item-text sidebar-link">
+  <a href="./unit_1_lesson_6.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Lesson 6</span></a>
   </div>
 </li>
@@ -202,10 +202,19 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#w3schools---quick-start" id="toc-w3schools---quick-start" class="nav-link active" data-scroll-target="#w3schools---quick-start">W3Schools - quick start</a></li>
-  <li><a href="#functions" id="toc-functions" class="nav-link" data-scroll-target="#functions">Functions</a></li>
-  <li><a href="#goal-oriented-sql" id="toc-goal-oriented-sql" class="nav-link" data-scroll-target="#goal-oriented-sql">Goal-oriented SQL</a></li>
-  <li><a href="#where-clause" id="toc-where-clause" class="nav-link" data-scroll-target="#where-clause">WHERE clause</a></li>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning objectives</a></li>
+  <li><a href="#where-clause" id="toc-where-clause" class="nav-link" data-scroll-target="#where-clause">where clause</a>
+  <ul class="collapse">
+  <li><a href="#discussion" id="toc-discussion" class="nav-link" data-scroll-target="#discussion">Discussion</a></li>
+  <li><a href="#logical-expression" id="toc-logical-expression" class="nav-link" data-scroll-target="#logical-expression">logical expression</a></li>
+  <li><a href="#case-sensitivity" id="toc-case-sensitivity" class="nav-link" data-scroll-target="#case-sensitivity">Case sensitivity</a></li>
+  </ul></li>
+  <li><a href="#complex-logical-expression" id="toc-complex-logical-expression" class="nav-link" data-scroll-target="#complex-logical-expression">Complex logical expression</a>
+  <ul class="collapse">
+  <li><a href="#or-operator" id="toc-or-operator" class="nav-link" data-scroll-target="#or-operator">OR operator</a></li>
+  <li><a href="#in-operator" id="toc-in-operator" class="nav-link" data-scroll-target="#in-operator">IN operator</a></li>
+  <li><a href="#discussion-1" id="toc-discussion-1" class="nav-link" data-scroll-target="#discussion-1">Discussion</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -214,7 +223,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Unit 1</h1>
+<h1 class="title">Lesson 6</h1>
 </div>
 
 
@@ -229,37 +238,105 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="w3schools---quick-start" class="level2">
-<h2 class="anchored" data-anchor-id="w3schools---quick-start">W3Schools - quick start</h2>
-<p>Unit 1 gets you into using SQL right away.</p>
-<p>You’ll start this primer using the W3Schools SQL tutorial online platform. This will allow you to write and run SQL without having to create a database or install any software.</p>
-</section>
-<section id="functions" class="level2">
-<h2 class="anchored" data-anchor-id="functions">Functions</h2>
-<p>SQL is a declarative programming language. It contains many built-in functions. You code calls to these functions to essentially “declare” what you what the db engine to do for you. You’ll get a start using functions in this unit.</p>
-</section>
-<section id="goal-oriented-sql" class="level2">
-<h2 class="anchored" data-anchor-id="goal-oriented-sql">Goal-oriented SQL</h2>
-<p>As you progress through this unit, you’ll find that even with a few SQL skills you can start using SQL as a tool for data analysis.</p>
-<p>As you’ll see in later lessons in this unit, when you write SQL, start by trying to verbalize a goal in the context of doing data analysis. Taking this goal-oriented approach will help you to design your SQL statement. Your goals for using SQL could include:</p>
-<ul>
-<li><p>Getting to know your data (profiling)</p></li>
-<li><p>Discovering facts contained in your data (insights)</p></li>
-<li><p>Cleaning or transforming your data for further analysis (preparing)</p></li>
-</ul>
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning objectives</h2>
+<p>After this lesson, you should be able to:</p>
+<ol type="1">
+<li><p>Specify the rows you want to retrieve from a table</p></li>
+<li><p>Explain using a logical expression in a where clause</p></li>
+<li><p>Explain how case sensitivity applies to SQL</p></li>
+</ol>
 </section>
 <section id="where-clause" class="level2">
-<h2 class="anchored" data-anchor-id="where-clause">WHERE clause</h2>
-<p>The last lesson hits on the important “where clause” that’s seen in most select statements. This clause allows you to specify which rows to select for processing.</p>
-<p>Data analysts working in large organizations often work with db tables containing a huge number of rows. Selecting all rows is usually undesirable for many reasons, including:</p>
-<ul>
-<li><p>Network traffic costs</p></li>
-<li><p>Run-time performance</p></li>
-<li><p>Local programming environment constraints</p></li>
-<li><p>Security and privacy concerns</p></li>
-</ul>
+<h2 class="anchored" data-anchor-id="where-clause">where clause</h2>
+<p>Use this <a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_where">W3Schools page</a>.</p>
+<p>Suppose you need to find all of your customers located in Berlin.</p>
+<p>Run this SQL:</p>
+<p><img src="images/unit_1_lesson_6_ss_1a.png" class="img-fluid"></p>
+<p>Result set:</p>
+<p><img src="images/unit_1_lesson_6_ss_1b.png" class="img-fluid"></p>
+<section id="discussion" class="level3">
+<h3 class="anchored" data-anchor-id="discussion">Discussion</h3>
+<p>The select statement contains the WHERE keyword, which is one way to constrain how many rows are in the result set.</p>
+<p>The result set contains one row because the Customers table contains just one row where the value of City is “Berlin”.</p>
+<p>See also the results set contains three columns that appear in the same order the columns are listed after the SELECT keyword.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Be careful about designing your select statement to build a sufficiently granular where clause. It didn’t happen because of data in the Customers table. Using the above SQL, you could have also selected rows for customers who live line in one of the many U.S. cities named Berlin.</p>
+</div>
+</div>
+</section>
+<section id="logical-expression" class="level3">
+<h3 class="anchored" data-anchor-id="logical-expression">logical expression</h3>
+<p>The fundamental part of the where clause is the logical expression that follows the WHERE keyword.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>logical expression</strong></p>
+<p>Recall a <a href="https://pythonnumericalmethods.berkeley.edu/notebooks/chapter01.05-Logial-Expressions-and-Operators.html">logical expression</a> always resolves to true or false.</p>
+</div>
+</div>
+<p>The db engine accesses each row in the table and substitutes values present in that row into the logical expression that follows the WHERE keyword. The db engine then evaluates the expression. If it resolves to TRUE data from that row is used for further processing by the db engine, otherwise that row is ignored.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>See how in the preceding paragraph, I said “data from that row is used for further processing by the db engine”. I purposely did not say “data from that row is put into the result set”. Typically it is, but depending on other parts of the select statement, the data from that “true” row may be used by the db engine for other processing but still data from that “true” row might not appear in the result set. This is a somewhat complex point that will be demonstrated later in this primer.</p>
+</div>
+</div>
+</section>
+<section id="case-sensitivity" class="level3">
+<h3 class="anchored" data-anchor-id="case-sensitivity">Case sensitivity</h3>
+<p>SQL is not case sensitive except for when you code character literals. For example, the where clause in the above SQL contains the character string “Berlin”. Here case sensitivity is important because “Berlin” is how the city is spelled in the City column of the database.</p>
+</section>
+</section>
+<section id="complex-logical-expression" class="level2">
+<h2 class="anchored" data-anchor-id="complex-logical-expression">Complex logical expression</h2>
+<p>The next two SQL examples show how a logical expression can be complex to allow for fine selection of row(s). Even it’s complex, a valid logical expression will ultimately resolve to true or false.</p>
+<p>In both of these examples, the goal is to get a count of customers in Brazil and Portugal. A business data analysis context might be the human resources department needs the counts to determine how customer service representatives to hire who speak Portuguese.</p>
+<section id="or-operator" class="level3">
+<h3 class="anchored" data-anchor-id="or-operator">OR operator</h3>
+<p>Use this <a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_count">W3Schools page</a>.</p>
+<p>Run this SQL:</p>
+<p><img src="images/unit_1_lesson_6_ss_2a.png" class="img-fluid"></p>
+<p>Result set:</p>
+<p><img src="images/unit_1_lesson_6_ss_2b.png" class="img-fluid"></p>
+</section>
+<section id="in-operator" class="level3">
+<h3 class="anchored" data-anchor-id="in-operator">IN operator</h3>
+<p>Use this <a href="https://www.w3schools.com/sql/trysql.asp?filename=trysql_select_count">W3Schools page</a>.</p>
+<p>Run this SQL:</p>
+<p><img src="images/unit_1_lesson_6_ss_3a.png" class="img-fluid"></p>
+<p>Result set:</p>
+<p><img src="images/unit_1_lesson_6_ss_3b.png" class="img-fluid"></p>
+</section>
+<section id="discussion-1" class="level3">
+<h3 class="anchored" data-anchor-id="discussion-1">Discussion</h3>
+<p>Examine the two preceding SQL statements and see the OR and IN operators produce the same results. Most people would say the IN operator makes the code more readable.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -498,13 +575,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./course_roadmap.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Course Roadmap</span>
+      <a href="./unit_1_lesson_5.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Lesson 5</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./unit_1_lesson_1.html" class="pagination-link">
-        <span class="nav-page-text">Lesson 1</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./part_unit_2.html" class="pagination-link">
+        <span class="nav-page-text">Unit 2</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
